@@ -1,0 +1,347 @@
+@import '../vendor/fonts.scss';
+
+$medium: 900px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page {
+  background-color: #fcdd73;
+  font-kerning: auto;
+  font-family: "Istok Web", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 120px;
+  padding: 0 24px;
+  background-color: #000000;
+  color: #fff;
+
+  &__coin-logo {
+    height: 55px;
+  }
+
+  &__coin-name {
+    font-size: 40px;
+    font-family: 'Seravek', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+}
+
+.mint {
+  position: relative;
+  min-height: calc(100vh - 136px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: #000;
+  padding: 0 30px;
+
+  &__title-span-item {
+    color: #fff;
+  }
+
+  &__title {
+    font-size: 56px;
+    font-family: 'Seravek', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: 1;
+  }
+
+  &__subtitle {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    z-index: 1;
+  }
+
+  &__button {
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 50px;
+    border-radius: 20px;
+    z-index: 1;
+  }
+
+  &__coin-image {
+    position: absolute;
+    right: 5vw;
+    bottom: 7vh;
+    max-width: 220px;
+    width: 20vw;
+  }
+}
+
+.disclaimer {
+  padding: 56px 0;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__sign-container {
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+
+    @media screen and (max-width: $medium) {
+      gap: 1vw;
+    }
+  }
+
+  &__sign {
+    font-size: 110px;
+    font-family: 'Seravek', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    @media screen and (max-width: $medium) {
+      font-size: 11vw;
+    }
+  }
+
+  &__span-item {
+    color: #fff;
+  }
+
+  &__mascot {
+    max-height: 75px;
+
+    @media screen and (max-width: $medium) {
+      height: 8vw;
+    }
+  }
+  
+  &__text {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    
+    width: 80vw;
+    max-width: 850px;
+  }
+}
+
+.tokenomics {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 120px 10vw 0;
+  
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+  }
+
+  &__mascot {
+    max-height: 300px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 1000px;
+  }
+
+  &__title {
+    font-size: 72px;
+    font-family: 'Seravek', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    @media screen and (max-width: $medium) {
+      font-size: 10vw;
+    }
+  }
+  &__description {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    
+  }
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:40px;
+
+  padding: 128px 0;
+
+  &__title {
+    font-family: 'Seravek', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+    padding: 0 5px;
+  }
+  
+  &__members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+  }
+}
+
+.member-card {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #fff;
+
+
+  &__image {
+    aspect-ratio: 1;
+    border: 5px solid #000;
+    border-radius: 50%;
+    width: 100%;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+
+  &__social {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+
+  &__link {
+    width: 20%;
+  }
+
+  &__social-image {
+    width: 100%;
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 50px;
+  
+  @media screen and (max-width: $medium) {
+    flex-direction: column-reverse;
+  }
+
+  &__desctiption-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+  }
+
+  &__title {
+    font-size: 72px;
+    line-height: 70px;
+    font-family: 'Seravek', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+    @media screen and (max-width: $medium) {
+      font-size: 45px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  &__links-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 230px;
+  }
+
+  &__mascot {
+    width: 100%;
+    max-width: 400px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__links {
+    list-style: none;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+  }
+
+  &__link-image {
+    width: 42px;
+    height: 42px;
+  }
+
+  
+  &__card-title {
+    font-size: 72px;
+    font-family: 'Seravek', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #000000;
+  color: #fff;
+
+  &__privacy {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}

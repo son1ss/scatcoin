@@ -19,37 +19,62 @@
   </header>
   <main class="wrapper">
     <section class="mint">
-      <p class="mint__title">Meet the&nbsp;<span class="mint__title-span-item">first</span> official mascot of&nbsp;crypto!</p>
+      <p class="mint__title">Meet the world&rsquo;s first coin created by&nbsp;a&nbsp;cat!</p>
       <h1 class="mint__subtitle">(I’m also the most memeable cat in existence)</h1>
-      <img src="<%=require('./images/coin.png')%>" alt="Coin Image" class="mint__coin-image">
+      <div class="mint__absolute">
+        <div class="mint__claim-container">
+          <h2 class="mint__claim-title">For Lilverse NFT holders</h2>
+          <img src="<%=require('./images/coin.png')%>" alt="Coin Image" class="mint__coin-image">
+          <a href="./claim.html" class="mint__button">Claim</a>
+        </div>
+        <div class="about__links-container">
+          <h3 class="about__card-title">Links</h3>
+          <ul class="about__links">
+            <li>
+              <a href="https://www.tiktok.com/@lilverseofficial" target="_blank" class="about__link">
+                <img src="<%=require('./images/tik-black.png')%>" alt="tiktok icon" class="about__link-image">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/mynameisscat" target="_blank" class="about__link">
+                <img src="<%=require('./images/tw-black.png')%>" alt="twitter icon" class="about__link-image">
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/mynameisscat" target="_blank" class="about__link">
+                <img src="<%=require('./images/telegram.png')%>" alt="discord icon" class="about__link-image">
+              </a>
+            </li>
+            <li>
+              <a href="https://app.uniswap.org/#/swap?outputCurrency=0x02d7a93829B365b7Ad4c582DAce1493aAC50A290" target="_blank" class="about__link">
+                <img src="<%=require('./images/uniswap.png')%>" alt="tiktok icon" class="about__link-image">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x8a87779f4e83f7d0ff19fdafafcc762deb75fe4e" target="_blank" class="about__link">
+                <img src="<%=require('./images/dextools.png')%>" alt="twitter icon" class="about__link-image">
+              </a>
+            </li>
+            <li>
+              <a href="https://etherscan.io/token/0x02d7a93829b365b7ad4c582dace1493aac50a290" target="_blank" class="about__link">
+                <img src="<%=require('./images/etherscan.png')%>" alt="discord icon" class="about__link-image">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="about__link">
+                <img src="<%=require('./images/coingecko.png')%>" alt="discord icon" class="about__link-image">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="about">
       <div class="about__desctiption-container">
         <h2 class="about__title">I&nbsp;represent the crypto industry</h2>
-        <p class="about__text">My mission is to restore the balance in crypto. $CAT is the world's first memecoin created by a cat.</p>
+        <p class="about__text">Our mission is to get rid of all the garbage in crypto by converting everything into $CAT.</p>
         <p class="about__text">I love to meow.</p>
       </div>
-      <!-- <div class="about__links-container">
-        <h3 class="about__card-title">Links</h3>
-        <ul class="about__links">
-          <li>
-            <a href="https://www.tiktok.com/@lilverseofficial" target="_blank" class="about__link">
-              <img src="<%=require('./images/tik-black.png')%>" alt="tiktok icon" class="about__link-image">
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/mynameisscat" target="_blank" class="about__link">
-              <img src="<%=require('./images/tw-black.png')%>" alt="twitter icon" class="about__link-image">
-            </a>
-          </li>
-          <li>
-            <a href="https://discord.gg/C7uynZy2GP" target="_blank" class="about__link">
-              <img src="<%=require('./images/discord-black.png')%>" alt="discord icon" class="about__link-image">
-            </a>
-          </li>
-          </li>
-        </ul>
-      </div> -->
       <img src="<%= require('./images/about.png') %>" alt="" class="about__mascot">
     </section>
     <section class="tokenomics hidden">
@@ -59,12 +84,12 @@
         <div class="tokenomics__description">
           <ul>
             <li>Supply: 420 trillion</li>
-            <li>
-              Distribution: <br>
-              - 80% Liquidity and Burn <br>
-              - 5% Team and LPs <br>
-              - 5% CEX liquidity <br>
-              - 10% Marketing <br>
+            <li>Distribution: <br>
+              - 80% Liquidity (locked for 2 years) <br>
+              - 3% Team and LPs  <br>
+              - 5% CEX liquidity  <br>
+              - 5% Marketing <br>
+              - 7% Lilverse NFT holders <br>
             </li>
           </ul>
         </div>
@@ -117,6 +142,7 @@
         <h2 class="disclaimer__sign">Important<span class="disclaimer__span-item">!</span></h2>
       </div>
       <p class="disclaimer__text">None of the information contained here constitutes an offer (or solicitation of an offer) to buy or sell any cryptocurrency. Investing in crypto, memecoins and NFTs involve risk of loss.</p>
+      <p class="disclaimer__email">Email: scat.eth@proton.me</p>
     </section>
   </main>
 </body>

@@ -44,6 +44,8 @@ $medium: 900px;
   color: #000;
   padding: 40px 30px;
   padding-top: 100px;
+  padding: 40px 30px;
+  padding-top: 100px;
 
   &__title-span-item {
     color: #fff;
@@ -101,6 +103,9 @@ $medium: 900px;
   }
 
   &__coin-image {
+    position: absolute;
+    right: 5vw;
+    bottom: 7vh;
     max-width: 220px;
     aspect-ratio: 1;
   }
